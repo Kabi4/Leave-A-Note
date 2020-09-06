@@ -1,0 +1,52 @@
+.App {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem 4rem;
+  text-align: center;
+  background-image: url('./../Assets//Images/Background.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 4rem 1fr;
+}
+/*font-family: 'Long Cang', cursive;
+font-family: 'Rock Salt', cursive;*/
+
+.heading{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Long Cang', cursive;
+  font-size: 3rem;
+  color: rgb(73, 63, 63);
+  font-weight: 500;
+  backface-visibility: hidden;
+  animation: animate 5s infinite linear;
+  text-decoration: underline solid rgb(66, 61, 61);
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-7px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.Posts {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min-content,20rem));
+  grid-auto-rows: minmax(250px,min-content);
+  grid-gap: 2rem;
+  align-content: center;
+  justify-content: center;
+}

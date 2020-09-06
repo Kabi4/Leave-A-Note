@@ -1,0 +1,13 @@
+.Person {
+    padding:30px;
+    display:inline-block;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    margin: auto;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.delete:hover{
+    color: red;
+}

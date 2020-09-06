@@ -1,0 +1,57 @@
+.PerNote{
+    box-sizing: border-box;
+    background-image: url('./../../Assets/Images/Note.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    animation: animate 5s infinite linear;
+    border-radius: 40px;
+    height: 100%;
+    padding: 0.3rem 2rem;
+    transition: all 0.3s;
+    
+}
+
+.PerNote:hover{
+    z-index: 99;
+}
+
+.PerNote h2{
+    box-sizing: border-box;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-family: 'Long Cang', cursive;
+    font-size: 2.5rem;
+    color: black;
+}
+.PerNote p{
+    box-sizing: border-box;
+    font-family: 'Rock Salt', cursive;
+    color: rgb(0, 0, 0);
+    line-height: 1;
+}
+
+.PerNote p i{
+    transition: all 0.3s;
+}
+
+.PerNote p i:hover{
+    color: red;
+}
+
+.PerNote p i:active{
+    color: black;
+}
+
+@keyframes animate{
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }

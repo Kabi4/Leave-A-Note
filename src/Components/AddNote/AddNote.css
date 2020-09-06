@@ -1,0 +1,55 @@
+.AddNote{
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    background-image: url('./../../Assets/Images/AddNote.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.AddNote input{
+    border-radius: 4px;
+    outline: none;
+    border: 2px double rgba(245, 240, 240, 0.5);
+    background-color: transparent;
+    margin-bottom: 0.5rem;
+    width: 200px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 0.6rem;
+    color:black;
+    font-weight:500;
+}
+
+.AddNote textarea{
+    border-radius: 16px;
+    outline: none;
+    border: 2px double rgba(253, 251, 251, 0.5);
+    background-color: transparent;
+    height: 140px;
+    width: 140px;
+    padding: 1rem;
+    font-family: 'Rock Salt', cursive;
+    font-size: 0.6rem;
+        color:black;
+        font-weight:500;
+}
+.AddNote button{
+    font-family: 'Rock Salt', cursive;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2.5px 0 rgba(0, 0, 0, 0.5), -1.5px -1.5px 2px 0 rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+}
+
+.AddNote button:active{
+    box-shadow: 2px 2px 2.5px 0 rgba(0, 0, 0, 0.5) inset, -1.5px -1.5px 2px 0 rgba(255, 255, 255, 0.6) inset;
+}

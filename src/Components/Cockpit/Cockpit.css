@@ -1,0 +1,31 @@
+.button{
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.button:hover{
+    color: black;
+    background-color: lightgreen;
+    transform: translateY(-3px);
+}
+
+.button:active{
+    transform: translateY(3px);
+}
+
+.button.red{
+    background-color: red;
+    border-radius: 4px;
+}
+.button.red:hover{
+    color: black;
+    background-color: salmon;
+    transform: translateY(-3px);
+}
+
+.button.red:active{
+    transform: translateY(3px);
+}
