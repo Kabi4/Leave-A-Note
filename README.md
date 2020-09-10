@@ -1,4 +1,4 @@
-# Sneaky Peak  
+# Sneaky Peak   
 
 ![Sample Img](https://github.com/Kabi4/Leave-A-Note/blob/master/SneakyPeak.png?raw=true "Budgety")
 
