@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import classes from './App.css';
 
-
 import AllNotes from './../Components/AllNotes/AllNotes';
 import AddNote from './../Components/AddNote/AddNote';
 
@@ -16,6 +15,7 @@ class App extends Component {
               date: null
             },
             first: true,
+            isdisable: true
           };
 
         componentDidMount(){
@@ -26,9 +26,7 @@ class App extends Component {
                   if(Response.data){Response.data.forEach(ele=>{
                     posts.push(ele);
                   })}
-              
-              this.setState({allPost: posts});
-              this.setState({first: false});
+              this.setState({allPost: posts,first: false,isdisable:false});
             })
           }
         }
@@ -42,15 +40,6 @@ class App extends Component {
           })
         }
         
-          // axios.delete('https://my-burger-builder-8fe87.firebaseio.com/leaveanote.json')
-          // .then(
-          //   axios.post('https://my-burger-builder-8fe87.firebaseio.com/leaveanote.json',updatedPosts)
-          // ).then(Response=>{
-            
-          // }).catch(err=>{
-          //   console.log(err);
-          //   alert("Something Fishy happend Please reload!")
-          // })
         shouldComponentUpdate(nextProps,nextState){
           return nextState.allPost!==this.state.allPost;
         }
@@ -122,7 +111,7 @@ class App extends Component {
             <div className={classes.Posts}>
               {allPostss}
             </div>
-            <AddNote addPost={this.addPostHandler} titleChange={this.onTitleChangeHandler} messageChange={this.onMessageChangeHandler}/>
+            <AddNote isdisable={this.state.isdisable} addPost={this.addPostHandler} titleChange={this.onTitleChangeHandler} messageChange={this.onMessageChangeHandler}/>
           </div>
         );
       }

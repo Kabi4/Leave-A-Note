@@ -13,7 +13,7 @@ class AddNote extends Component{
             <div className={classes.AddNote}>
                 <input className="titleInput" placeholder="Your Name Or Title Here"  type="text" onChange={(e)=>{this.props.titleChange(e)}}/>
                 <textarea className="titleMessage" placeholder="Enter Message" onChange={(e)=>{this.props.messageChange(e)}}/>
-                <button onClick={()=>{
+                <button disabled={this.props.isdisable} onClick={()=>{
                     this.props.addPost();
                     this.clearAll();
                 }} >Console.log(Note)</button>
