@@ -1,3 +1,5 @@
+# Table of Contents
+
 [Don't Forget to leave a note.](https://leaveanotebydevilksk.web.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
